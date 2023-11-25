@@ -8,7 +8,7 @@ Password(encoded)
 Review:
 ReviewID (Primary Key)
 UserID (Foreign Key referencing User.UserID)
-ProductID (Foreign Key referencing Product.ProductID)
+PaymentId (Foreign Key referencing Payment.PaymentID)
 Rating
 Comment
 Date
