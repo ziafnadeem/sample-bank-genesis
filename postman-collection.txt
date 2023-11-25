@@ -1,0 +1,11 @@
+https://api.postman.com/collections/9504652-3b1709f8-d618-4db1-8956-946533ecfb5a?access_key=PMAT-01HG2YFEGHT5JJTQPE0YH40D4Q
+
+
+// process payment using processPayment endpoint
+responsible for inserting data into db and using a third party library such as stripe to deduct amount from users account etc
+
+// generateReceipt
+this will fetch data from db and return to frontend to generate receipts
+
+//postReview
+to store geniune review of user
