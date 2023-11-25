@@ -1,0 +1,42 @@
+User:
+
+UserID (Primary Key)
+UserName
+Email
+Password(encoded)
+
+Review:
+ReviewID (Primary Key)
+UserID (Foreign Key referencing User.UserID)
+ProductID (Foreign Key referencing Product.ProductID)
+Rating
+Comment
+Date
+
+Payment:
+PaymentID (Primary Key)
+UserID (Foreign Key referencing User.UserID)
+Amount
+PaymentType (e.g., Credit Card, etc.)
+PaymentDate
+
+Receipt:
+ReceiptID (Primary Key)
+PaymentID (Foreign Key referencing Payment.PaymentID)
+ReceiptDate
+
+User-Review Relationship:
+Each user can have multiple reviews, but each review is associated with one user.
+This is represented by the foreign key UserID in the Review table, referencing the UserID in the User table.
+
+Review-Product Relationship:
+Each review is associated with one product, and each product can have multiple reviews.
+This is represented by the foreign key ProductID in the Review table, referencing the ProductID in the Product table.
+
+User-Payment Relationship:
+Each user can have multiple payments, but each payment is associated with one user.
+This is represented by the foreign key UserID in the Payment table, referencing the UserID in the User table.
+
+Payment-Receipt Relationship:
+Each payment can have multiple receipts, but each receipt is associated with one payment.
+This is represented by the foreign key PaymentID in the Receipt table, referencing the PaymentID in the Payment table.
