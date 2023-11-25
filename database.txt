@@ -29,14 +29,10 @@ User-Review Relationship:
 Each user can have multiple reviews, but each review is associated with one user.
 This is represented by the foreign key UserID in the Review table, referencing the UserID in the User table.
 
-Review-Product Relationship:
-Each review is associated with one product, and each product can have multiple reviews.
-This is represented by the foreign key ProductID in the Review table, referencing the ProductID in the Product table.
-
 User-Payment Relationship:
 Each user can have multiple payments, but each payment is associated with one user.
 This is represented by the foreign key UserID in the Payment table, referencing the UserID in the User table.
 
 Payment-Receipt Relationship:
-Each payment can have multiple receipts, but each receipt is associated with one payment.
+Each payment can have one receipts and each receipt is associated to one user.
 This is represented by the foreign key PaymentID in the Receipt table, referencing the PaymentID in the Payment table.
